@@ -3,10 +3,6 @@ public class Main {
         int len = 0;
         String firstArg = args[0];  // First command-line argument
         String secondArg = args[1]; // Second command-line argument
-        int location = firstArg.indexOf(secondArg);
-        if (location == 0) {
-            len += secondArg.length();
-        }
 
         while (len < firstArg.length()) {
             if ((firstArg.substring(len)).contains(secondArg)) {
